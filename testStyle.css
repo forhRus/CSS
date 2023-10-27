@@ -1,0 +1,137 @@
+body {
+    /* 
+    настрйоки действуют на весь сайт, 
+    но приоритет частных настроек выше
+     */
+
+    /* цвет фона CSS/color_value*/
+    background-color: #f1f1f1;
+    /* background: rgb(185, 174, 174); */
+
+    /* цвет шрифта */
+    color: #0f141e;
+
+    
+    /* размер шрифта */
+    /* font-size: 16; */
+
+    /* жирность шрифта  normal/bold */
+    /* font-weight: normal; */
+
+    /* выбор шрифта */
+    /* font-family: 'Courier New', Courier, monospace; */
+
+    /*     site https://fonts.google.com/specimen/Roboto 
+    можем скопировать ссылку наш рифт 
+    или импортировает его в нашу таблицу стилей */
+    
+    /* @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    font-family: 'Roboto', sans-serif; */ 
+    
+    
+    /* короткая запись для шрифта */
+    font: normal 16px 'Roboto', sans-serif;
+}
+
+/* стили для класса avatar */
+.avatar {
+
+    /* ширина изображения */
+    width: 200px;
+
+    /* скругление углов */
+    /* border-radius: 28px; */
+
+    /* круглая картинка */
+    border-radius: 50%;
+
+    /* тень у аватарки x/y/length/color */
+    box-shadow: 4px 4px 14px rgba(0 0 0 / 25);
+}
+
+/* применяются к id(они уникальны)  */
+#avatar {
+
+}
+
+
+/* стилизуем все вложенные параграфы класса info */
+.info p{
+    /* цвет шрифта */    
+    color: #86899f;
+
+    /* отступы блока */
+    margin: 0;
+
+    /* стиль - курсив */
+    font-style: italic;
+
+    /* жирный текст */
+    font-weight: bold;
+
+    /* (подчеркнуть текст underline) (зачеркнутый line-through)*/
+    text-decoration: none;
+
+    /* весь текст с маленькой буквы lowercase, 
+     сбольшое uppercase,
+     первая буква заглавная
+     */
+    text-transform: capitalize;
+
+    /* количество пробелов между символами */
+    /* letter-spacing: 10px; */
+
+    /* пропуски между словами */
+    /* word-spacing: 10px; */
+}
+
+/* Box Model */
+.container{
+    /* ширина контенера */
+    /* width: 750px; */
+    /* width: 100%; */
+
+    /* адаптивная ширина, небольше 750 */
+    max-width: 750px;
+
+    /* центровать */
+    margin: auto;
+}
+
+.social {
+    /* цвет блока(можно объеденить) */
+    background: rgb(204, 144, 144);
+
+    /* отступ текста в блоке */
+    padding: 15px;
+
+    /* верх и низ/ бока */
+    /* padding: 10px, 30px; */
+
+    /* верх и по часовой */
+    /* padding: 10px, 15px, 20px, 30px; */
+    /* padding-top: 10px; */
+
+    /* рамка толщина/тип линии/цвет */
+    border: 5px solid red;
+    /* double */
+    border-bottom-style: dotted; 
+
+    /* внешние отступы блока */
+    margin: 20px;
+}
+
+/* .name div стилизуются все дивы, котоыре находятся внутри */
+/* .name > div стилизовать только дочерние дивы */
+.box-model > div {
+    float: left;
+    /* цвет дочернего блока */
+    background: #000;
+    /* высота дочернего блока */
+    height: 200px;    
+    border: 4px solid red;
+    /* ширина дочернего блока */
+    width: 25%;
+    /* включить border в ширину блока */
+    box-sizing: border-box;
+}
